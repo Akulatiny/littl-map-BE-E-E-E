@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOOH MY GOAT</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <!-- Tailwind CSS для современного оформления -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Подключение стилей и скриптов Leaflet.js для карты -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+    <!-- Дополнительные стили, чтобы страница занимала всю высоту, а карта выглядела правильно -->
+   
+</head>
+<header>
+    <button class="menu" a href="avatar"></button>
+</header>
+<body class="bg-white text-gray-900">
+
+    <!-- 1. Секция с картой (Сверху) -->
+    <div id="map" class="border-b border-gray-100"></div>
+
+    <!-- 2. Секция Body (Под картой) -->
+    
+    <!-- 3. Футер (Внизу) -->
+    <footer class="bg-white text-gray-500 py-10 text-center mt-auto">
+        <div class="max-w-4xl mx-auto px-4">
+            
+            <p class="mb-6 flex items-center justify-center gap-2 text-gray-400 font-light">
+                <!-- Иконка локации (SVG) -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                Одесса, Украина
+            </p>
+            
+            <!-- Контакты в минималистичном стиле -->
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 text-sm font-light uppercase tracking-widest">
+                <a href="mailto:maksim@example.com" class="hover:text-black transition-colors duration-200">Email</a>
+                <span class="hidden sm:inline text-gray-200">|</span>
+                <a href="#" class="hover:text-black transition-colors duration-200">Telegram</a>
+                <span class="hidden sm:inline text-gray-200">|</span>
+                <a href="#" class="hover:text-black transition-colors duration-200">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
